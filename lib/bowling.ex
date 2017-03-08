@@ -12,6 +12,11 @@ defmodule Bowling do
       :world
 
   """
+  defmodule Frame do
+    defstruct roll1: nil, roll2: nil
+  end
+    
+  defstruct frames: []
 
   def update_score([scores], new) do
     cond do
